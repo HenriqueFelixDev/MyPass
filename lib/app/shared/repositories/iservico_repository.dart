@@ -1,9 +1,9 @@
-import 'package:mypass/app/shared/models/servico.dart';
+import '../models/servico.dart';
 
 abstract class IServicoRepository {
-  cadastrar(Servico servico);
-  atualizar(Servico servico);
-  deletar(int id);
-  buscarPorId(int id);
-  buscarServicos();
+  Future<int> cadastrar(Servico servico);
+  Future<bool> atualizar(Servico servico);
+  Future<bool> deletar(int id);
+  Future<Servico> buscarPorId(int id);
+  Future<List<Servico>> buscarServicos();
 }
