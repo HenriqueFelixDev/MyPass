@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
+import 'package:mypass/app/modules/servicos/servico_module.dart';
 
 import 'app_widget.dart';
 
@@ -9,7 +10,7 @@ class AppModule extends MainModule {
 
   @override
   List<Router> get routers => [
-    Router('/', child: (_, args) => Container())
+    Router('/servico', module: ServicoModule())
   ];
 
   @override
