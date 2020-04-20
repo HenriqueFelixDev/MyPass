@@ -22,7 +22,7 @@ class ConsultaServicosScreen extends StatelessWidget {
       child: ListView.builder(
       itemCount: 10,
       itemBuilder: (context, index) {
-        return ConsultaServicosTile(Servico(1, 'GTA V', 'gtav.com', null, null, null, null), onTap: () => Modular.to.pushNamed('/visualizar'));
+        return ConsultaServicosTile(Servico(1, 'GTA V', 'gtav.com', null, null, null, null), onTap: () => Modular.to.pushNamed('/servico/visualizar'));
       })
     );
   }
@@ -54,7 +54,7 @@ class ConsultaServicosScreen extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add, color: Colors.white),
         backgroundColor: Theme.of(context).accentColor,
-        onPressed: () => Modular.to.pushNamed('/salvar')
+        onPressed: () => Modular.to.pushNamed('/servico/salvar')
       )
     );
   }

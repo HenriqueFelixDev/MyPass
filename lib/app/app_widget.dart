@@ -11,7 +11,7 @@ class AppWidget extends StatelessWidget {
       title: APP_NAME,
       theme: themeLight,
       navigatorKey: Modular.navigatorKey,
-      initialRoute: '/',
+      initialRoute: '/servico',
       onGenerateRoute: Modular.generateRoute
     );
   }
