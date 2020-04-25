@@ -4,16 +4,16 @@ import 'iservico_repository.dart';
 class ServicoRepositoryMock extends IServicoRepository {
   static int _ID_INDEX = 0;
   List<Servico> servicos = [
-    Servico(++_ID_INDEX, 'Conta da Microsoft', 'microsoft.com', 'MarcosPereira', 'marcospereira45@mail.com', 'abcd1234', null),
-    Servico(++_ID_INDEX, 'Conta do Facebook', 'facebook.com', 'MariaClara', 'maria_clara@mail.com', 'abcd1234', null),
-    Servico(++_ID_INDEX, 'Conta da Unity', 'unity.com', 'AnaSilva', 'anasilva98@mail.com', 'abcd1234', null),
-    Servico(++_ID_INDEX, 'Conta do Gmail1', 'gmail.com', 'JoaoCarlos', 'joaocarlos25@mail.com', 'abcd1234', null),
-    Servico(++_ID_INDEX, 'Conta do Gmail2', 'gmail.com', 'JoaoCarlos', 'joaocarlospereira@mail.com', 'abcd1234', null),
-    Servico(++_ID_INDEX, 'Conta do Instagram', 'instagram.com', 'MarcosPereira', 'marcospereira45@mail.com', 'abcd1234', null),
-    Servico(++_ID_INDEX, 'Conta do Twitter', 'twitter.com', 'MariaClara', 'maria_clara@mail.com', 'abcd1234', null),
-    Servico(++_ID_INDEX, 'Conta do TikTok', 'tiktok.com', 'AnaSilva', 'anasilva98@mail.com', 'abcd1234', null),
-    Servico(++_ID_INDEX, 'Conta da Rockstar', 'rockstar.com', 'JoaoCarlos', 'joaocarlos25@mail.com', 'abcd1234', null),
-    Servico(++_ID_INDEX, 'Conta da EpicGames', 'epicgames.com', 'PedroLourenco', 'pedro_lourenco2@mail.com', 'abcd1234', null)
+    Servico(id: ++_ID_INDEX, identificador: 'Conta da Microsoft', servico: 'microsoft.com', usuario: 'MarcosPereira', email: 'marcospereira45@mail.com', senha: 'abcd1234', informacoes: null),
+    Servico(id: ++_ID_INDEX, identificador:'Conta do Facebook', servico: 'facebook.com', usuario: 'MariaClara', email: 'maria_clara@mail.com', senha: 'abcd1234', informacoes: null),
+    Servico(id: ++_ID_INDEX, identificador:'Conta da Unity', servico: 'unity.com', usuario: 'AnaSilva', email: 'anasilva98@mail.com', senha: 'abcd1234', informacoes: null),
+    Servico(id: ++_ID_INDEX, identificador:'Conta do Gmail1', servico: 'gmail.com', usuario: 'JoaoCarlos', email: 'joaocarlos25@mail.com', senha: 'abcd1234', informacoes: null),
+    Servico(id: ++_ID_INDEX, identificador:'Conta do Gmail2', servico: 'gmail.com', usuario: 'JoaoCarlos', email: 'joaocarlospereira@mail.com', senha: 'abcd1234', informacoes: null),
+    Servico(id: ++_ID_INDEX, identificador:'Conta do Instagram', servico: 'instagram.com', usuario: 'MarcosPereira', email: 'marcospereira45@mail.com', senha: 'abcd1234', informacoes: null),
+    Servico(id: ++_ID_INDEX, identificador:'Conta do Twitter', servico: 'twitter.com', usuario: 'MariaClara', email: 'maria_clara@mail.com', senha: 'abcd1234', informacoes: null),
+    Servico(id: ++_ID_INDEX, identificador:'Conta do TikTok', servico: 'tiktok.com', usuario: 'AnaSilva', email: 'anasilva98@mail.com', senha: 'abcd1234', informacoes: null),
+    Servico(id: ++_ID_INDEX, identificador:'Conta da Rockstar', servico: 'rockstar.com', usuario: 'JoaoCarlos', email: 'joaocarlos25@mail.com', senha: 'abcd1234', informacoes: null),
+    Servico(id: ++_ID_INDEX, identificador:'Conta da EpicGames', servico: 'epicgames.com', usuario: 'PedroLourenco', email: 'pedro_lourenco2@mail.com', senha: 'abcd1234', informacoes: null)
   ];
 
   @override
