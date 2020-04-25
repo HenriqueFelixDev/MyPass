@@ -9,6 +9,7 @@ class AppWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: APP_NAME,
+      debugShowCheckedModeBanner: false,
       theme: themeLight,
       navigatorKey: Modular.navigatorKey,
       initialRoute: '/servico',
